@@ -246,7 +246,7 @@ public class MultiParticipate {
     for(String email : partnerEmails) {
       this.data.append(",'"+ email +"' => "+ this.getEmail(email) +"");
     }
-    this.data.append("                    ));").append("\n");
+    this.data.append("));").append("\n");
   }
 
   //Un Register data
@@ -449,7 +449,7 @@ public class MultiParticipate {
     }
     this.data.append("        $update_query = $con->prepare("+ this.getUpdateQuery() +");").append("\n")
     .append("    $update_query->execute();").append("\n")
-    .append("    echo json_encode(array('status' => 'success'));").append("\n")
+    .append("    echo json_encode(array('status' => 'registered'));").append("\n")
     .append("}").append("\n")
     .append("?>").append("\n");
   }
