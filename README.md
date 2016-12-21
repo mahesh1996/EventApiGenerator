@@ -130,7 +130,7 @@ Now, It provides following APIs.
 	    'partner2_status' : 'not_registered'
 	    and so on
 	   } (in case if partner1 and partner2 is not registerd on this website)  
-	   ```
+	   ```  
 	   ```  
 	   {'partner1_status' : 'already_registered_with_other',
 	    'partner2_status' : 'already_registered_with_other'
